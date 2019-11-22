@@ -14,7 +14,7 @@ function Home() {
         <div className="home-main">
             <img
                 className="home-image"
-                src="https://github.com/projectdivvy/project-lunchbox-FE/blob/master/src/images/HomepageMain.jpg"
+                src="/Users/denisefafette/Documents/LambdaSchoolWeb25/Unit2-WebApplicationsI/project-lunchbox-frontend/src/images/HomepageMain.jpg"
                 alt="a pair of hands holding fresh vegetables"
                 />
         </div>
