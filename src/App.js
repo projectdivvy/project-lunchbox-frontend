@@ -21,15 +21,11 @@ export default function App() {
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
+          <Route path="/about" component = {About} />
           <Route path="/login">
             <Login />
           </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
+          <Route exact path="/" component = {Home} />
         </Switch>
       </div>
     </Router>

@@ -17,6 +17,7 @@ const Title = styled.h1`
 
 const Image = styled.image`
     size: 20%;
+    margin: 100px 50px;
     padding: 2em;
     `;
 
