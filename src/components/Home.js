@@ -2,7 +2,7 @@ import React from 'react';
 import HomeImage from "../images/HomepageMain.jpg";
 
 //node modules
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 //components
@@ -41,7 +41,9 @@ function Home() {
                 width={500}
                 alt="a pair of hands holding fresh vegetables"
                 />
+            <Link to="/login">
             <Button>Login</Button>
+            </Link>
         </div>
     )
 }
