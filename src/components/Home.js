@@ -1,5 +1,4 @@
 import React from 'react';
-import HomeImage from "../images/HomepageMain.jpg";
 
 //node modules
 import { Route, Link } from 'react-router-dom';
@@ -7,6 +6,7 @@ import styled from 'styled-components';
 
 //components
 import Login from '../components/Login';
+import HomeImage from "../images/HomepageMain.jpg";
 
 //styles
 const Title = styled.h1`
