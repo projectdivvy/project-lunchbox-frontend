@@ -6,8 +6,9 @@ import styled from 'styled-components';
 //Homepage
 
 const Title = styled.h1`
+    font-size: 2em
+    text-align: center;
     color: #39BC46;
-    size: 3em
     `;
 
 const HomePageMain = styled.img`
@@ -20,6 +21,7 @@ const Wrapper = styled.section`
   `;
 
 //Login
+
 
 
 
