@@ -10,9 +10,12 @@ export default function App() {
     <Router>
           <div>
             <nav>
+              <p>
                   <Link to="/">Home</Link>
+              </p>
+              <p>
                   <Link to="/about">About</Link>
-                  <Link to="/users">Login</Link>
+              </p>
             </nav>
       
       {/* A <Switch> looks through its children <Route>s and
