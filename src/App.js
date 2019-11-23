@@ -1,15 +1,42 @@
 import React from 'react';
 import './App.css';
-import { Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router,Switch, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
+import Login from './components/Login';
+import About from './components/About';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <h1>Project Lunchbox</h1>
-      <Home/>
-    </div>
+    <Router>
+          <div>
+            <nav>
+              <p>
+                  <Link to="/">Home</Link>
+              </p>
+              <p>
+                  <Link to="/about">About</Link>
+              </p>
+            </nav>
+      
+      {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/about" component = {About} />
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/" component = {Home} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
-export default App;
+//     <div className="App">
+//       <h1>Project Lunchbox</h1>
+//       <Home/>
+//       <Route exact path="/login" component={Login}/>
+//       <Route path = "/about" component = {About}/>
+//     </div>
+//   );
+// }
